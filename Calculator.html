@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="section-1">
+        <div class="calculator">
+            <input type="text" id="inputbox" placeholder="0">
+
+            <div>
+                <button onclick="clearScreen()" class="operator">Ac</button>
+                <button onclick="del()" class="operator">Del</button>
+                <button onclick="display('%')" class="operator">%</button>
+                <button onclick="display('/')" class="operator">/</button>
+            </div>
+
+            <div>
+                <button onclick="display('7')" class="operands">7</button>
+                <button onclick="display('8')" class="operands">8</button>
+                <button onclick="display('9')" class="operands">9</button>
+                <button onclick="display('*')" class="operator">*</button>
+            </div>
+
+            <div>
+                <button onclick="display('4')" class="operands">4</button>
+                <button onclick="display('5')" class="operands">5</button>
+                <button onclick="display('6')" class="operands">6</button>
+                <button onclick="display('-')" class="operator">-</button>
+            </div>
+
+            <div>
+                <button onclick="display('1')" class="operands">1</button>
+                <button onclick="display('2')" class="operands">2</button>
+                <button onclick="display('3')" class="operands">3</button>
+                <button onclick="display('+')" class="operator">+</button>
+            </div>
+
+            <div>
+                <button onclick="display('00')" class="operands">00</button>
+                <button onclick="display('0')" class="operands">0</button>
+                <button onclick="display('.')" class="operands">.</button>
+                <button onclick="calculate()" class="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function clearScreen(){
+            document.getElementById("inputbox").value="";
+        }
+        function display(value){
+            document.getElementById("inputbox").value+=value;
+        }
+        function calculate(){
+            var a=document.getElementById("inputbox").value;
+            var b= eval(a);
+            document.getElementById("inputbox").value=b;
+        }
+        function del(){
+            let currentValue = inputbox.value;
+            inputbox.value= currentValue.slice(0,-1);
+        }
+    </script>
+</body>
+</html>
