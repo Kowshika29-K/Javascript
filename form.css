@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.sec1 {
+    width: 400px;
+    height: 300px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.sec1 h1{
+    text-align: center;
+}
+.c1 input{
+    padding: 5px 0px;
+}
+.c1{
+    padding-left: 15px;
+}
+button{
+    padding: 5px 67px 5px 67px;
+    color: white;
+    background-color: rgb(67, 216, 67);
+    border-radius: 5px;
+}
+#para{
+    display:none;
+    color: red;
+}

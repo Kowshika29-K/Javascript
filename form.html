@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="sec1">
+            <h1>Login To Coding Market</h1>
+            <div class="c1">
+            <label for="username">Email or Username</label>
+            <br>
+            <input type="text" name="Username" id="user" min="4" required="" >
+            <br><br>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" name="password" id="pass" min="6" max="12" required="" >
+            <br><br>
+            <p id="para" style="font-size: 10px;">Incorrect Username or password.Please try again</p>
+            <button onclick="val()">Login</button>
+            <!-- <div id="result"></div>
+            <div id="result1"></div> -->
+        </div>
+    </div>
+
+        <script>  
+              function val(){
+                // var a=document.getElementById("user").value;
+                // var b=document.getElementById("pass").value;
+                // document.getElementById("result").innerHTML=a;
+                // document.getElementById("result1").innerHTML=b;
+              var x = document.getElementById("user").value;
+              var y=document.getElementById("pass").value;
+              if (x == "") {
+                  document.getElementById("para").style.display='block'
+            }
+              else if(y==""){
+                  document.getElementById("para").style.display='block'
+            }
+        }
+        </script>
+   
+</body>
+</html>

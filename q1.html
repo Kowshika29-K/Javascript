@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question1</title>
+</head>
+<body>
+    <section>
+        <form>
+            <input type="text" id="inputbox" onkeyup="func()">
+            <h1 id="result"></h1>
+        </form>
+    </section>
+
+    <script>
+        function func(){
+        var x = document.getElementById("inputbox").value;
+        document.getElementById("result").textContent = x;
+        }
+    </script>
+</body>
+</html>
